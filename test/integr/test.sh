@@ -18,3 +18,10 @@ if [[ $output == "Length of equal part is: 2" ]]; then
 else
 	echo "FAILED"
 fi
+
+output=$($path 2 "test/data/test_data1.txt")
+if [[ $output == "Length of equal part is: 2" ]]; then
+	echo "OK"
+else
+	echo "FAILED"
+fi

@@ -79,6 +79,8 @@ TEST(TestAlgo, mismatch) {
 TEST(TestAlgo, find) {
     std::vector <int> a{-1, -2, -3};
 
+    ASSERT_EQ(cust_find(a.begin(), a.end(), -1), a.begin());
+    ASSERT_EQ(cust_find(a.begin(), a.end(), -2), a.begin() + 1);
     ASSERT_EQ(cust_find(a.begin(), a.end(), 0), a.end());
     
 }

@@ -70,7 +70,7 @@ template<class InputIt, class T>
 InputIt cust_find(InputIt first, InputIt last, const T& value) {
     for (; first != last; ++first) {
         if (*first == value) {
-            return last;
+            return first;
         }
     }
     return last;

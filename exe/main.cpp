@@ -30,7 +30,7 @@ void calculate_mismatch(const std::string& filename) {
     std::pair <std::vector<int>::iterator, 
                std::vector<int>::iterator> mismatch_arrs = cust_mismatch(
                     arr1.begin(), arr1.end(), 
-                    arr1.begin(), arr2.end());
+                    arr2.begin(), arr2.end());
     std::cout << "Length of equal part is: " << mismatch_arrs.first - arr1.begin() << std::endl;
 }
 
